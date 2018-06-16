@@ -1,0 +1,28 @@
+1.	A recent national study showed that approximately 44.7% of college students have used Wikipedia as a source in at least one of their term papers. Let X equal the number of students in a random sample of size n = 31 who have used Wikipedia as a source.
+Perform the below functions
+a.	Find the probability that X is equal to 17
+Answer:
+      Here n=31, prob=44.7/100
+      Using dbinom(q,n,p) 
+      Dbinom(17, 31, 44.7/100)
+ 
+b.	Find the probability that X is at most 13.
+Answer:
+      Pbinom(13, 31, 44.7/100)
+ 
+
+c.	Find the probability that X is bigger than 11.
+Answer:
+      Pbinom(11, 31, 44.7/100, lower.tail = FALSE)
+ 
+
+d.	Find the probability that X is at least 15.
+Answer:
+      Pbinom(15, 31, 44.7/100)
+ 
+
+e.	Find the probability that X is between 16 and 19, inclusive..
+Answer:
+	     sum(dbinom(16:19, 31, 44./100))
+        
+
